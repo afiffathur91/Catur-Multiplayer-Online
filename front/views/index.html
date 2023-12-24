@@ -1,0 +1,74 @@
+<html>
+    <head>
+          <meta charset="utf-8">
+        </head>{{> head}}
+        <title>Permainan Catur Online</title>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center; /* Tengahkan konten */
+      }
+      
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(162, 104, 104, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: center; /* Tengahkan konten */
+      }
+      
+      h1 {
+        font-size: 36px; /* Atur ukuran huruf */
+        margin-bottom: 20px;
+      }
+      
+      h2 {
+        font-size: 24px; /* Atur ukuran huruf */
+        margin-bottom: 20px;
+      }
+      
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #aec6ff; /* Warna latar belakang footer */
+        color: #495057; /* Warna teks footer */
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Permainan Catur Online</h1>
+    </head>
+    <body>
+        <h2>Masukkan Kode Room</h2>
+        <input type="text" id="codeInput">
+        <button id="createGame">Buat Room</button>
+        <button id="joinGame">Join Room</button>
+        <div style="color: red" id="errorMessage"></div>
+
+        <script>
+            $('#createGame').on('click', function() {
+                window.location.replace('/white?code=' + $('#codeInput').val());
+            });
+            $('#joinGame').on('click', function() {
+                window.location.replace('/black?code=' + $('#codeInput').val());
+            });
+
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('error') == 'invalidCode') {
+                $('#errorMessage').text('Invalid invite code');
+            }
+        </script>
+        <footer>
+            By Afif Fathur
+        </footer>
+    </body>
+</html>

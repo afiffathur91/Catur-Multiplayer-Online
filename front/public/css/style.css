@@ -1,0 +1,51 @@
+body{
+  background: url('Background.jpg');
+  color: black;
+  background-size: 85%;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center; /* Tengahkan konten */
+}
+
+h2 {
+  font-size: 36px; /* Atur ukuran huruf */
+  margin-bottom: 20px;
+  color: rgb(26, 151, 119);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px; /* Atur ukuran huruf */
+  text-align: center; /* Tengahkan konten */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px; /* Atur ukuran huruf */
+  text-align: center; /* Tengahkan konten */
+}
+
+button:hover {
+  background-color: #45a049;
+}

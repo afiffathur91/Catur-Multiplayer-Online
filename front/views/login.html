@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center; /* Tengahkan konten */
+      }
+      
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: center; /* Tengahkan konten */
+      }
+      
+      h1 {
+        font-size: 36px; /* Atur ukuran huruf */
+        margin-bottom: 20px;
+      }
+      
+      h2 {
+        font-size: 24px; /* Atur ukuran huruf */
+        margin-bottom: 20px;
+      }
+      
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #aec6ff; /* Warna latar belakang footer */
+        color: #495057; /* Warna teks footer */
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Permainan Catur Online</h1>
+      <h2>Login</h2>
+      <form method="post" action="/login">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <footer>
+        By Afif Fathur
+    </footer>
+  </body>
+</html>
